@@ -1,0 +1,11 @@
+version: "3"
+services:
+  webapp:
+    build: ./
+    networks:
+      - dotnet-network
+    ports:
+      - "8080:5001"
+networks:
+  dotnet-network:
+      driver: bridge
