@@ -3,8 +3,8 @@ using DotnetCoreWebApplication.Model;
 
 namespace DotnetCoreWebApplication.Repository
 {
-    public interface IUserStateRepository
+    public interface IUserRepository
     {
-        UserState FindByUserId(int userId);
+        IEnumerable<User> FindAll();
     }
 }
